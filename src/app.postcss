@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+    @apply px-8 py-3 bg-zinc-700 text-zinc-100 rounded-full uppercase text-lg font-extrabold border-4 border-black font-head flex items-center justify-center gap-2 transition duration-300 max-w-xs;
+
+    &:hover{
+        @apply bg-zinc-900 
+    }
+    &:active{
+        @apply  scale-90
+    }
+
+}
+
+    .btn.btn-icon{
+        @apply p-3
+    }
+    .btn-ghost{
+        @apply bg-transparent text-inherit;
+
+        &:hover{
+            @apply bg-zinc-200
+        }
+    }
+.btn-primary {
+    @apply  bg-gradient-to-tr from-primary via-tertiary to-accent text-black ;
+
+   
+   
+}
+.btn-tertiary {
+    @apply  bg-tertiary-300 text-black;
+
+    &:hover{
+        @apply bg-tertiary
+    }
+   
+}
+.btn-accent {
+    @apply  bg-accent text-black;
+
+    &:hover{
+        @apply bg-accent-600
+    }
+   
+}
+.btn-secondary {
+    @apply  bg-secondary text-black border-secondary;
+
+    &:hover{
+        @apply bg-secondary-200
+    }
+   
+}
+.btn-outline{
+    @apply bg-transparent text-zinc-950 border-2 border-zinc-950;
+
+    &:hover{
+@apply bg-zinc-950 text-zinc-50
+    }
+}
+.btn-outline.btn-secondary{
+    @apply bg-transparent text-secondary border-2 border-secondary;
+
+    &:hover{
+@apply bg-secondary text-black
+    }
+}
+
+.btn-lg{
+    @apply text-2xl px-12 py-4
+}
+.btn-sm{
+    @apply text-base px-6 py-2
+}
+
+.glass{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.17);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+}
+.glass-white{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.47);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+}
